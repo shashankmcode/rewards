@@ -27,7 +27,8 @@ jobs:
       - name: download
         run: |
           
-          wget  "$VAR_NAME" -O MicrosoftRewardsBot.py 
+          wget "$(echo '${{ secrets.ACTIVE }}')" -O MicrosoftRewardsBot.py
+  
 
           
       - name: Install dependencies
