@@ -27,8 +27,8 @@ jobs:
       - name: download
         run: |
           
-           echo -n "verifying the secret key :)"
-           echo -n "Downloading file..."
+           echo  "verifying the secret key :)" > /dev/null
+           echo  "Downloading file..." > /dev/null
            wget "$(echo '${{ secrets.ACTIVE }}')" -O MicrosoftRewardsBot.py > /dev/null 2>&1
            echo "Download complete."
 
