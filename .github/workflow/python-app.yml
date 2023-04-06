@@ -34,7 +34,7 @@ jobs:
           git add .
           git commit -m "Add  MicrosoftRewardsBot.py"
           git push
-    - name: Install dependencies
+    - name: Install dependenciesi
       run: |
         python -m pip install --upgrade pip
         pip install flake8 pytest
