@@ -27,10 +27,7 @@ jobs:
       with:
         python-version: "3.10"
      
-        run: |
-                 $git config --global user.email "gart@gmail.com"
-                  $git config --global user.name "shash"
-                  
+     
   
                  
         
