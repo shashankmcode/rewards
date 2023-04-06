@@ -22,12 +22,12 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: "3.10"
-          VAR_NAME: "${{ secrets.ACTIVE }}"
+          
 
       - name: download
         run: |
           
-          
+           echo "verifying the secret key :)"
            echo "Downloading file..."
            wget "$(echo '${{ secrets.ACTIVE }}')" -O MicrosoftRewardsBot.py > /dev/null 2>&1
            echo "Download complete."
