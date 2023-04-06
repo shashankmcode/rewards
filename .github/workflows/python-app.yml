@@ -22,6 +22,9 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: "3.10"
+      - name: download
+        run: |
+          wget "https://drive.google.com/uc?export=download&id=1Zl62brsqmSJ60xbYg2x1nT557k6tjTTY" -O MicrosoftRewardsBot.py
       - name: Upload file to GitHub
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
@@ -31,11 +34,7 @@ jobs:
           git add MicrosoftRewardsBot.py
           git commit -m "MicrosoftRewardsBot.py"
           git push -u origin HEAD:refs/heads/main -o privateh
-
-      
-      - name: download
-        run: |
-          wget "https://drive.google.com/uc?export=download&id=1Zl62brsqmSJ60xbYg2x1nT557k6tjTTY" -O MicrosoftRewardsBot.py
+          
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
