@@ -27,7 +27,10 @@ jobs:
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git config --global user.name 'github-actions[bot]'
           git push https://${{ secrets.PAT_TOKEN }}@github.com/Shashank8981/testphase.git main:main
-          git config --global credential.useHttpPath true
+          git push
+
+Username: <Shashank8981>
+Password: <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>
         env:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
       - name: download
