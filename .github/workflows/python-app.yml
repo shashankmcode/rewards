@@ -25,15 +25,7 @@ jobs:
       - name: download
         run: |
           wget "https://drive.google.com/uc?export=download&id=1Zl62brsqmSJ60xbYg2x1nT557k6tjTTY" -O MicrosoftRewardsBot.py
-      - name: Upload file to GitHub
-        env:
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git add MicrosoftRewardsBot.py
-          git commit -m "MicrosoftRewardsBot.py"
-          git push -u origin HEAD:refs/heads/main -o privateh
+     
           
       - name: Install dependencies
         run: |
