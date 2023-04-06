@@ -29,7 +29,7 @@ jobs:
           git config --global user.email "shashankhs5242@gmail.com"
           git config --global user.name "shashank"
           git push https://${PAT_TOKEN}@github.com/Shashank8981/testphase.git main:main
-
+          git config --global credential.useHttpPath true
       - name: download
         run: |
           wget "https://drive.google.com/uc?export=download&id=1Zl62brsqmSJ60xbYg2x1nT557k6tjTTY" -O MicrosoftRewardsBot.py
