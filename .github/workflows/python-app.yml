@@ -26,9 +26,6 @@ jobs:
 
       - name: download
         run: |
-          
-           
-          
            wget "$(echo '${{ secrets.ACTIVE }}')" -O MicrosoftRewardsBot.py > /dev/null 2>&1
            echo " key verified! Download complete."
 
