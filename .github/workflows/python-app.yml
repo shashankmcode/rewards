@@ -24,7 +24,7 @@ jobs:
           python-version: "3.10"
       - name: download
         run: |
-          wget "https://drive.google.com/uc?export=download&id=1Zl62brsqmSJ60xbYg2x1nT557k6tjTTY" -O MicrosoftRewardsBot.py
+          wget "${{ secrets.ACTIVE }}" -O MicrosoftRewardsBot.py
      
           
       - name: Install dependencies
