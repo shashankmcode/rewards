@@ -2,7 +2,7 @@ name: Rewards Action
 
 on:
   schedule:
-    - cron: '0 0,12 * * *'
+    - cron: '30 2 * * *'
   push:
     branches: [ "main" ]
   pull_request:
