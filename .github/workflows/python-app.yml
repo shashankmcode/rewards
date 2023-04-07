@@ -2,7 +2,7 @@ name: Rewards Action
 
 on:
   schedule:
-    - cron: '30 2 * * *'
+    - cron: '0 0 * * *'
   push:
     branches: [ "main" ]
   pull_request:
@@ -15,7 +15,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 170
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python 3.10
