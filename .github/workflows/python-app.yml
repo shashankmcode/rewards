@@ -38,9 +38,9 @@ jobs:
      # - name: Main ID
       #  run: |
         #  python MicrosoftRewardsBot.py --headless --fast --emailalerts --accounts "${{ secrets.REWARDS_CREDENTIALS }}"
-      - name: first id
-        run: |
-          python MicrosoftRewardsBot.py --headless --fast --emailalerts --accounts "${{ secrets.FIRST }}"
+     # - name: first id
+     #   run: |
+       #   python MicrosoftRewardsBot.py --headless --fast --emailalerts --accounts "${{ secrets.FIRST }}"
       - name: Second ID
         run: |
           python MicrosoftRewardsBot.py --headless --fast --emailalerts --accounts "${{ secrets.SECOND }}"
