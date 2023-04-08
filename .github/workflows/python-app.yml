@@ -41,12 +41,12 @@ jobs:
       - name: first id
         run: |
          python MicrosoftRewardsBot.py --headless --fast --emailalerts --accounts "${{ secrets.FIRST }}"
-     # - name: Second ID
-     #   run: |
-      #    python MicrosoftRewardsBot.py --headless --fast --emailalerts --accounts "${{ secrets.SECOND }}"
-     # - name: Third ID
-     #   run: |
-     #     python MicrosoftRewardsBot.py --headless --fast --emailalerts --accounts "${{ secrets.THIRD }}"
-     # - name: Fourth ID
-    #    run: |
-     #     python MicrosoftRewardsBot.py --headless --fast --emailalerts --accounts "${{ secrets.FOURTH }}"
+      - name: Second ID
+        run: |
+          python MicrosoftRewardsBot.py --headless --fast --emailalerts --accounts "${{ secrets.SECOND }}"
+      - name: Third ID
+        run: |
+          python MicrosoftRewardsBot.py --headless --fast --emailalerts --accounts "${{ secrets.THIRD }}"
+      - name: Fourth ID
+        run: |
+          python MicrosoftRewardsBot.py --headless --fast --emailalerts --accounts "${{ secrets.FOURTH }}"
