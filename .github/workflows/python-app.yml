@@ -50,3 +50,12 @@ jobs:
       - name: Fourth ID
         run: |
           python MicrosoftRewardsBot.py --headless --fast --emailalerts --accounts "${{ secrets.FOURTH }}"
+      - name: Collect logs
+        uses: actions/upload-artifact@v3
+        with:
+          name: logs
+          path: logs.txt
+      -  name: upload to tele via api
+         continue-on-error: true
+         run: |
+          curl -F document=@logs.txt -F chat_id=${{ secrets.TELEGRAM_CHAT_ID }} https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendDocument
